@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Survey Form</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="style.css">
+      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </head>
+    <body>
+        <!-- Container -->
+        <div id="container">
+
+            <!-- Title & Descriptiion -->
+            <h1 id="title"><u>Survey Form</u></h1>
+            <p id="description">This is a Survey Form for getting the information.</p>
+
+            <!-- Survey Form -->
+            <form action="" id="survey-form">
+
+                <!-- Basic details -->
+                <label for="name" id="name-label" class="class">Name</label>
+                <input type="text" id="name" class="input" placeholder="Enter Your Name" required></input>
+
+                <label for="email" id="email-label" class="class">Email</label>
+                <input type="email" id="email" class="input" placeholder="Enter Your Email" required></input>
+
+                <label for="number" id="age-label" class="class">Age(optional)</label>
+                <input type="number" min="1" max="100" id="age" class="input" placeholder="Enter Your Age" required></input>
+
+                <label for="number" id="mobile-label" class="class">Mobile Number</label>
+                <input type="tel" id="mobile" class="input" placeholder="Enter Your Mobile Number" required></input>
+
+                <!-- Dropdown Menu -->
+<div class="dropDownDiv">
+  <label for="job" class="class">Which type of job you want?</label><br>
+                <select name="job" id="dropdown">
+                  <option value="select the type" selected disabled>Select the type</option>
+                  <option value="full-time">Full Time</option>
+                  <option value="part-time">Part Time</option>
+                  <option value="work-from-home">Work From Home</option>
+                  <option value="weekly">Weekly</option>
+                </select>
+</div>
+                
+
+                <!-- Choose your field -->
+                <div id="field">
+                    <label for="" class="class" id="label">Choose your field</label>
+                    <div id="radio">
+                        <span>
+                            <input type="radio" value="field" name="field">
+                            <label for="radio">Engineering</label>
+                        </span>
+
+                        <span>
+                            <input type="radio" value="field" name="field">
+                            <label for="radio">Medical</label>
+                        </span>
+
+                        <span>
+                            <input type="radio" value="field" name="field">
+                            <label for="radio">Management</label>
+                        </span>
+
+                        <span>
+                            <input type="radio" value="field" name="field">
+                            <label for="radio">Banking</label>
+                        </span>
+
+                        <span>
+                            <input type="radio" value="field" name="field">
+                            <label for="radio">Any Other</label>
+                        </span>
+                    </div>
+                </div>
+
+                    <!-- Choose your qualification -->
+                    <div id="qualification">
+                        <label for="check" class="class">What is your qualification?</label>
+                    <div id="box">
+                        <span>
+                            <input type="checkbox" value="field" name="field">
+                        <label for="checkbox">10th</label>
+                        </span>
+                        
+                        <span>
+                            <input type="checkbox" value="12th">
+                        <label for="checkbox">12th</label>
+                        </span>
+                        
+                        <span>
+                            <input type="checkbox" value="graduate">
+                        <label for="checkbox">Graduate</label>
+                        </span>
+                        
+                        <span>
+                            <input type="checkbox" value="post-graduate">
+                        <label for="checkbox">Post-Graduate</label>
+                        </span>
+                    </div>
+                    </div>
+
+                    <!-- Write comments here -->
+                    <label for="text" class="class" id="comment">Additional Comments</label>
+                    <textarea name="text" id="textArea" cols="28" rows="3" placeholder="Enter your comments here..."></textarea>
+                    <button type="submit" value="submit" id="submit">Submit</button>
+                </div>
+            </form>
+        </div>   
+        <!-- <script src="" async defer></script> -->
+    </body>
+</html>
